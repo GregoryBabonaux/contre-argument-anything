@@ -90,6 +90,10 @@ Les liens LinkedIn, X, Discord, Slack ou Teams sont souvent illisibles par les I
 - **Pas d'accusation non établie** ("il ment", "corrompu"). Le droit de la presse s'applique à ce que tu postes.
 - **Les posts sur un drame personnel sont hors périmètre.**
 
+## Voir aussi
+
+[Moi aussi, mais en mieux](https://github.com/GregoryBabonaux/moi-aussi-mais-en-mieux) : la skill qui s'approprie un post autocentré et fait mieux que son auteur.
+
 ## Structure du repo
 
 ```
