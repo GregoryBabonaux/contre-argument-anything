@@ -57,6 +57,7 @@
 - Chiffre sans dénominateur, pourcentage sans base
 - Promesse sans chiffrage
 - Spécifiques LinkedIn : humblebrag, leçon tirée d'un enfant ou d'un chauffeur de taxi, "j'ai été refusé 100 fois", appel final à commenter
+- Spécifiques X, Reddit, Discord : "source : tkt", capture d'écran recadrée sans contexte, "faites vos recherches", ratio présenté comme preuve, upvotes présentés comme consensus
 
 ## Pièges à éviter soi-même
 

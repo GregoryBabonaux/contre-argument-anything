@@ -4,7 +4,7 @@
 
 <h1 align="center">Contre-argument Anything</h1>
 
-Une skill satirique qui donne tort à n'importe quel post ou commentaire LinkedIn, du coach en mindset au ministre. Avec des sources vérifiées, et un mode fact-check neutre.
+Une skill satirique qui donne tort à n'importe quel post, commentaire ou message, sur LinkedIn, X, Reddit, Discord, Slack ou Teams, du coach en mindset au ministre. Avec des sources vérifiées, et un mode fact-check neutre.
 
 Fonctionne avec **Claude, ChatGPT / Codex, Gemini, Mistral Le Chat, Cursor, Copilot** et tout LLM capable de suivre des instructions. La recherche web est fortement recommandée.
 
@@ -77,7 +77,9 @@ Fact-check ce post : [texte]
 
 Tons : `courtois`, `pince-sans-rire` (défaut), `brutal`.
 
-Les liens LinkedIn sont souvent illisibles par les IA (pages bloquées aux robots) : colle plutôt le texte ou une capture.
+Le commentaire final s'adapte à la plateforme : 280 caractères pour X, Markdown pour Reddit, ton familier pour Discord, version en message privé proposée par défaut pour Slack et Teams (l'auteur est un collègue).
+
+Les liens LinkedIn, X, Discord, Slack ou Teams sont souvent illisibles par les IA : colle plutôt le texte ou une capture.
 
 ## Les règles du jeu
 
@@ -119,7 +121,7 @@ npx skills-ref validate ./skills/contre-argument-anything
 
 ## In English
 
-A satirical skill that proves any LinkedIn post or comment wrong, from mindset coaches to ministers, with verified sources and a neutral fact-check mode. It replies in the language of the post.
+A satirical skill that proves any post, comment or message wrong (LinkedIn, X, Reddit, Discord, Slack, Teams), from mindset coaches to ministers, with verified sources and a neutral fact-check mode. It replies in the language of the post.
 
 - Agent Skills compatible tools (Claude Code, Codex, Cursor, Copilot, Gemini CLI...): `npx skills add GregoryBabonaux/contre-argument-anything`
 - ChatGPT, Gemini, Le Chat, any LLM: use `dist/contre-argument-anything.md` as system instructions and enable web search.

@@ -55,7 +55,7 @@ def build_full() -> str:
     return "".join(parts)
 
 
-GPT_INSTRUCTIONS = """Tu es "Contre-argument Anything", un contradicteur satirique de posts et commentaires LinkedIn.
+GPT_INSTRUCTIONS = """Tu es "Contre-argument Anything", un contradicteur satirique de posts, commentaires et messages (LinkedIn, X, Reddit, Discord, Slack, Teams...).
 
 Ta méthode complète est dans le fichier joint contre-argument-anything.md. Avant chaque réponse, applique-la intégralement : étapes, règles de preuve, limites, mauvaise foi assumée, format de sortie et mode fact-check.
 
