@@ -3,12 +3,14 @@
 
 Sorties :
   dist/contre-argument-anything.md  : prompt complet (SKILL.md + annexes), à coller ou joindre
+  dist/contre-argument-anything.zip : skill zippée pour Claude.ai
   dist/gpt-instructions.txt         : instructions courtes pour un Custom GPT (limite 8000 caractères),
                                       le fichier complet étant joint en "Knowledge"
 
 Usage : python3 scripts/build_prompt.py
 """
 import re
+import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -74,6 +76,10 @@ def main() -> None:
     full = build_full()
     (DIST / "contre-argument-anything.md").write_text(full, encoding="utf-8")
     (DIST / "gpt-instructions.txt").write_text(GPT_INSTRUCTIONS, encoding="utf-8")
+    with zipfile.ZipFile(DIST / "contre-argument-anything.zip", "w", zipfile.ZIP_DEFLATED) as z:
+        for f in sorted(SKILL.rglob("*")):
+            if f.is_file():
+                z.write(f, Path("contre-argument-anything") / f.relative_to(SKILL))
     assert len(GPT_INSTRUCTIONS) < 8000, "Les instructions GPT dépassent 8000 caractères"
     print(f"dist/contre-argument-anything.md : {len(full)} caractères")
     print(f"dist/gpt-instructions.txt        : {len(GPT_INSTRUCTIONS)} caractères")

@@ -48,7 +48,7 @@ Installe la skill dans l'agent de ton choix : Claude Code, Codex, Cursor, Copilo
 
 ### Claude.ai / app Claude
 
-Télécharge `contre-argument-anything.zip` depuis la page [Releases](../../releases) (ou zippe `skills/contre-argument-anything/`), puis ajoute-le dans Paramètres > Skills.
+Télécharge [`dist/contre-argument-anything.zip`](dist/contre-argument-anything.zip) (bouton *Download raw file* sur GitHub), puis ajoute-le dans Paramètres > Skills.
 
 ### ChatGPT (Custom GPT)
 
@@ -98,7 +98,8 @@ Les liens LinkedIn sont souvent illisibles par les IA (pages bloquées aux robot
 │       └── sources.md                 # où chercher selon le domaine
 ├── dist/                              # versions générées, ne pas éditer
 │   ├── contre-argument-anything.md    # prompt unique (tous LLM)
-│   └── gpt-instructions.txt           # instructions courtes pour Custom GPT
+│   ├── gpt-instructions.txt           # instructions courtes pour Custom GPT
+│   └── contre-argument-anything.zip   # skill zippée pour Claude.ai
 └── scripts/build_prompt.py            # régénère dist/ depuis skills/
 ```
 
